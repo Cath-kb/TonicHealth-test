@@ -1,0 +1,22 @@
+@import "reset.css";
+@import "grid.css";
+@import "base.css";
+
+/*Main CSS------------------begin*/
+.form-section-title {
+	margin: 10px 0 10px;
+	padding: 4px 12px 4px;
+	background-color: #ffd58d;
+	background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #ffbd4b), color-stop(100%, #ffd58d)); /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
+	background-image: -webkit-linear-gradient(bottom, #ffbd4b 0%, #ffd58d 100%); /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+	background-image: -moz-linear-gradient(bottom, #ffbd4b 0%, #ffd58d 100%); /* Firefox 3.6 - 15 */
+	background-image: -o-linear-gradient(bottom, #ffbd4b 0%, #ffd58d 100%); /* Opera 11.1 - 12 */
+	background-image: linear-gradient(bottom, #ffbd4b 0%, #ffd58d 100%); /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+	box-shadow: 0 2px 2px #b1915d;
+	color: #b95b0f;
+	text-align: center;
+	text-shadow: 0 1px 1px #ffe4b6;
+	font-weight: normal;
+	font-size: 18px;
+}
+/*Main CSS--------------------end*/

@@ -1,0 +1,35 @@
+/*Base CSS------------------begin*/
+input:focus {
+	outline: 1px solid #007bbe;
+}
+
+a {
+	color: #007bbe;
+}
+
+a:hover,
+a:focus {
+	color: #9edbfc;
+	-webkit-transition: color 0.2s linear;
+	-moz-transition: color 0.2s linear;
+	-o-transition: color 0.2s linear;
+	transition: color 0.2s linear;
+}
+
+a:visited {
+	color: #0c2a78;
+}
+
+body {
+	background: #eaeaea url("../img/main_bg.png") repeat;
+	font: 12px/1.2 Arial, "Nimbus Sans L", Helvetica, sans-serif;
+	color: #877d7d;
+}
+
+.main {
+	background: #fff;
+	padding: 8px;
+	border-radius: 10px;
+	box-shadow: 0 0 7px rgba(37,37,37,.5);
+}
+/*Base CSS--------------------end*/
