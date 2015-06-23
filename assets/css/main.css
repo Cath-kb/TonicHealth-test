@@ -84,7 +84,9 @@
 	display: inline-block;
 }
 
-.form-icon-buttons-group .button, .custom-checkbox-helper:before {
+.form-icon-buttons-group .button,
+.custom-checkbox-helper:before,
+.custom-radio-helper:before {
 	border-color: #a97c3a;
 	background-color: #efc392;
 	background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #fee9cb), color-stop(100%, #fff4e4)); /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
@@ -96,7 +98,10 @@
 	color: #a47a3b;
 }
 
-.form-icon-buttons-group .button:hover, .form-icon-buttons-group .button:focus, .custom-checkbox-helper:focus:before {
+.form-icon-buttons-group .button:hover,
+.form-icon-buttons-group .button:focus,
+.custom-checkbox-helper:focus:before,
+.custom-radio-helper:focus:before {
 	background-color: #efc392;
 	background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #fcc87e), color-stop(100%, #fff4e4)); /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
 	background-image: -webkit-linear-gradient(bottom, #fcc87e 0%, #fff4e4 100%); /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
@@ -106,7 +111,7 @@
 }
 
 .form-icon-buttons-group .button:focus {
-	border-color: #a9571b;
+	border-color: #864414;
 }
 
 .form-icon-buttons-group .full-button-wrap {
@@ -139,6 +144,98 @@
 	pointer-events: none;
 }
 
+.form-group-info {
+	font-size: 1.25em;
+	color: #975f31;
+	text-shadow: 0 1px 1px #fff;
+}
+
+.font-formatting-buttons-group > div {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.font-formatting-buttons-group .font-style-buttons-group {
+	display: table;
+}
+
+.font-style-buttons-group .button {
+	display: table-cell;
+	font-size: 1.25em;
+	padding: .32em .6em;
+	min-width: 2em;
+	font-weight: normal;
+}
+
+.font-style-buttons-group .button:first-child {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.font-style-buttons-group .button:last-child {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.font-style-buttons-group .button:not(:first-child):not(:last-child) {
+	border-radius: 0;
+}
+
+.font-style-buttons-group .button-bold {
+	font-weight: bold;
+}
+
+.font-style-buttons-group .button-italic {
+	font-style: italic;
+}
+
+.font-style-buttons-group .button-underlined {
+	text-decoration: underline;
+}
+
+.font-size-buttons-group {
+	width: 3.75em;
+}
+
+.font-formatting-results-group {
+
+}
+
+.font-formatting-result {
+	color: #b95b0f;
+	text-shadow: 0 1px 1px #fff;
+	font-size: 2em;
+}
+
+.font-formatting-buttons-group-title,
+.S2.form-group-title,
+.S3.form-group-title {
+	height: 2em;
+	line-height: 2;
+}
+
+.skip-checkbox-group .form-group-line {
+	margin: 1.667em 0;
+}
+
+.permissions-form-section .form-group {
+	padding-top: 2em;
+}
+
+.permissions-form-section legend.form-group-title {
+	padding-top: 0;
+	padding-right: .1em;
+	line-height: 1;
+}
+
+.permissions-form-section .form-group-line {
+	margin-top: 1em;
+}
+
+.permissions-form-section .form-group-line:first-child {
+	margin-top: 0;
+}
+
 .form-section:last-of-type {
 	padding-bottom: 9.167em;
 }
@@ -155,5 +252,35 @@
 	margin-top: 1.333em;
 	width: 100%;
 	text-align: center;
+}
+
+.button-submit {
+	color: #fff;
+	font-size: 1.25em;
+	font-family: "Helvetica CY", "Nimbus Sans L", sans-serif;
+	text-transform: capitalize;
+	text-shadow: none;
+	background-color: #ff7e00;
+	border-color: #d36800;
+	box-shadow: 0 1px 5px rgba(66,60,47, .52);
+	background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #ff7e00), color-stop(100%, #ffa042)); /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
+	background-image: -webkit-linear-gradient(bottom, #ff7e00 0%, #ffa042 100%); /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+	background-image: -moz-linear-gradient(bottom, #ff7e00 0%, #ffa042 100%); /* Firefox 3.6 - 15 */
+	background-image: -o-linear-gradient(bottom, #ff7e00 0%, #ffa042 100%); /* Opera 11.1 - 12 */
+	background-image: linear-gradient(bottom, #ff7e00 0%, #ffa042 100%); /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+}
+
+.button-submit:hover, .button-submit:focus {
+	background-color: #ff5e00;
+	box-shadow: 0 1px 5px rgba(66,60,47, .52);
+	background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #ff5e00), color-stop(100%, #ffb348)); /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
+	background-image: -webkit-linear-gradient(bottom, #ff5e00 0%, #ffb348 100%); /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+	background-image: -moz-linear-gradient(bottom, #ff5e00 0%, #ffb348 100%); /* Firefox 3.6 - 15 */
+	background-image: -o-linear-gradient(bottom, #ff5e00 0%, #ffb348 100%); /* Opera 11.1 - 12 */
+	background-image: linear-gradient(bottom, #ff5e00 0%, #ffb348 100%); /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+}
+
+.button-submit:focus {
+	border-color: #9e4f00;
 }
 /*Main CSS--------------------end*/

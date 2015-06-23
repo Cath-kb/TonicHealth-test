@@ -63,18 +63,20 @@
 				<h2 class="form-section-title">Universal Options for Survey Look and Feel</h2>
 				<div class="form-section-content">
 					<div class="form-group">
-						<p class="">Click on any of the below to make them universal for all the questions in your survey or form. But don't worry—you will still be able to change these settings for any individual question!</p>
+						<p class="form-group-info">Click on any of the below to make them universal for all the questions in your survey or form. But don't worry—you will still be able to change these settings for any individual question!</p>
 					</div>
 					<!--form-group-->
-					<fieldset class="form-group">
-						<legend class="sub-title">Question Font Formatting</legend>
-						<div class="buttons-group font-formatting-buttons-group">
-							<div class="font-style-buttons-group">
-								<button class="button button-bold">B</button>
-								<button class="button button-italic">I</button>
-								<button class="button button-underlined">U</button>
-							</div>
+					<fieldset class="form-group row">
+						<legend class="sub-title font-formatting-buttons-group-title S3">Question Font Formatting</legend>
+						<div class="buttons-group S3 font-formatting-buttons-group">
 							<div>
+								<div class="font-style-buttons-group">
+									<button class="button button-bold">B</button>
+									<button class="button button-italic">I</button>
+									<button class="button button-underlined">U</button>
+								</div>
+							</div>
+							<div class="font-size-buttons-group">
 								<div class="custom-select-wrap">
 									<select class="select font-size-select">
 										<option value="8">8</option>
@@ -83,14 +85,14 @@
 									</select>
 								</div>
 							</div>
-							<div>
+							<div class="font-formatting-results-group">
 								<span class="font-formatting-result">Aa</span>
 							</div>
 						</div>
 					</fieldset>
 					<!--form-group-->
 					<fieldset class="form-group">
-						<div class="checkbox-group">
+						<div class="checkbox-group skip-checkbox-group">
 							<div class="form-group-line">
 								<label class="custom-checkbox-wrap" for="allow_skip_questions">
 									<input class="checkbox" id="allow_skip_questions" type="checkbox"/>
@@ -112,92 +114,157 @@
 			<section class="form-section">
 				<h2 class="form-section-title"> Universal Options for Reports Look and Feel</h2>
 				<div class="form-section-content">
-					<div class="form-group">
-						<label class="label" for="patient_id">Display Patient Identifier Name As</label>
-						<input class="input" id="patient_id" type="text"/>
-					</div>
-					<!--form-group-->
-
-					<div class="form-group">
-						<label class="label" for="layout_type">Layout to be used for printable reports</label>
-						<div class="custom-select-wrap">
-							<select class="select" id="layout_type">
-								<option value=""></option>
-								<option value=""></option>
-								<option value=""></option>
-							</select>
+					<div class="form-group row">
+						<label class="label S3 form-group-title" for="patient_id">Display Patient Identifier Name As</label>
+						<div class="S3">
+							<input class="input" id="patient_id" type="text" value="MRN"/>
 						</div>
 					</div>
 					<!--form-group-->
-					<div class="form-group">
-						<label class="label" for="included_content">Content to include in printable reports</label>
-						<div class="custom-select-wrap">
-							<select class="select" id="included_content">
-								<option value=""></option>
-								<option value=""></option>
-								<option value=""></option>
-							</select>
+					<fieldset class="form-group row">
+						<legend class="sub-title font-formatting-buttons-group-title S3">Question Font Formatting</legend>
+						<div class="buttons-group S3 font-formatting-buttons-group">
+							<div>
+								<div class="font-style-buttons-group">
+									<button class="button button-bold">B</button>
+									<button class="button button-italic">I</button>
+									<button class="button button-underlined">U</button>
+								</div>
+							</div>
+							<div class="font-size-buttons-group">
+								<div class="custom-select-wrap">
+									<select class="select font-size-select">
+										<option value="8">8</option>
+										<option value="10">10</option>
+										<option value="12">12</option>
+									</select>
+								</div>
+							</div>
+							<div class="font-formatting-results-group">
+								<span class="font-formatting-result">Aa</span>
+							</div>
+						</div>
+					</fieldset>
+					<!--form-group-->
+					<fieldset class="form-group row">
+						<legend class="sub-title font-formatting-buttons-group-title S3">Answer Font Formatting</legend>
+						<div class="buttons-group S3 font-formatting-buttons-group">
+							<div>
+								<div class="font-style-buttons-group">
+									<button class="button button-bold">B</button>
+									<button class="button button-italic">I</button>
+									<button class="button button-underlined">U</button>
+								</div>
+							</div>
+							<div class="font-size-buttons-group">
+								<div class="custom-select-wrap">
+									<select class="select font-size-select">
+										<option value="8">8</option>
+										<option value="10">10</option>
+										<option value="12">12</option>
+									</select>
+								</div>
+							</div>
+							<div class="font-formatting-results-group">
+								<span class="font-formatting-result">Aa</span>
+							</div>
+						</div>
+					</fieldset>
+					<!--form-group-->
+					<div class="form-group row">
+						<label class="label S3 form-group-title" for="layout_type">Layout to be used for printable reports</label>
+						<div class="S3">
+							<div class="custom-select-wrap">
+								<select class="select" id="layout_type">
+									<option value="2">Two column</option>
+									<option value="3">Three column</option>
+									<option value="4">Four column</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<!--form-group-->
+					<div class="form-group row">
+						<label class="label S3 form-group-title" for="included_content">Content to include in printable reports</label>
+						<div class="S3">
+							<div class="custom-select-wrap">
+								<select class="select" id="included_content">
+									<option value="1">Include only answered questions</option>
+									<option value="2">Include all answered questions</option>
+									<option value="3">Not include answered questions</option>
+								</select>
+							</div>
 						</div>
 					</div>
 					<!--form-group-->
 				</div>
 			</section>
 			<!--form-section-->
-			<section class="form-section">
+			<section class="form-section permissions-form-section">
 				<h2 class="form-section-title">Permissions</h2>
 				<div class="form-section-content">
-					<fieldset class="form-group">
-						<legend class="sub-title">Users long Name maximum</legend>
-						<div class="input-group">
-							<div>
+					<fieldset class="form-group row">
+						<legend class="sub-title S2 form-group-title">Users long Name maximum</legend>
+						<div class="input-group S2">
+							<div class="form-group-line">
 								<label class="custom-checkbox-wrap" for="manage_survey">
 									<input type="checkbox" class="checkbox" id="manage_survey"/>
 									<span class="label-title custom-checkbox-helper">Managing the survey</span>
 								</label>
 							</div>
-							<div>
-								<input type="radio" class="radio" name="access_type" id="access_manage"/>
-								<label for="access_manage">Manage</label>
+							<div class="form-group-line">
+								<label class="custom-radio-wrap" for="access_manage">
+									<input type="radio" class="radio" name="access_type" id="access_manage"/>
+									<span class="label-title custom-radio-helper">Manage</span>
+								</label>
 							</div>
-							<div>
-								<input type="radio" class="radio" name="access_type" id="access_view"/>
-								<label for="access_view">View</label>
+							<div class="form-group-line">
+								<label class="custom-radio-wrap" for="access_view">
+									<input type="radio" class="radio" name="access_type" id="access_view"/>
+									<span class="label-title custom-radio-helper">View</span>
+								</label>
 							</div>
 						</div>
 						<!--input-group-->
-						<div class="input-group">
-							<div>
+						<div class="input-group S2">
+							<div class="form-group-line">
 								<label class="custom-checkbox-wrap" for="access_data">
 									<input type="checkbox" class="checkbox" id="access_data"/>
 									<span class="label-title custom-checkbox-helper">Accessing the data</span>
 								</label>
 							</div>
-							<div>
-								<input type="radio" class="radio" name="data_access_type" id="data_access_modify"/>
-								<label for="data_access_modify">Modify Data</label>
+							<div class="form-group-line">
+								<label class="custom-radio-wrap" for="data_access_modify">
+									<input type="radio" class="radio" name="data_access_type" id="data_access_modify"/>
+									<span class="label-title custom-radio-helper">Modify Data</span>
+								</label>
 							</div>
-							<div>
-								<input type="radio" class="radio" name="data_access_type" id="data_access_view_all"/>
-								<label for="data_access_view_all"> View All Data (including PHI)</label>
+							<div class="form-group-line">
+								<label class="custom-radio-wrap" for="data_access_view_all">
+									<input type="radio" class="radio" name="data_access_type" id="data_access_view_all"/>
+									<span class="label-title custom-radio-helper">View All Data (including PHI)</span>
+								</label>
 							</div>
-							<div>
-								<input type="radio" class="radio" name="data_access_type" id="data_access_view_deindef"/>
-								<label for="data_access_view_deindef">View de-identified data</label>
+							<div class="form-group-line">
+								<label class="custom-radio-wrap" for="data_access_view_deindef">
+									<input type="radio" class="radio" name="data_access_type" id="data_access_view_deindef"/>
+									<span class="label-title custom-radio-helper">View de-identified data</span>
+								</label>
 							</div>
 						</div>
 						<!--input-group-->
 					</fieldset>
 					<!--form-group-->
-					<fieldset class="form-group">
-						<legend class="sub-title">Users long Name maximum 2</legend>
-						<div class="input-group">
+					<fieldset class="form-group row">
+						<legend class="sub-title S2 form-group-title">Users long Name maximum2</legend>
+						<div class="input-group S2">
 							<label class="custom-checkbox-wrap" for="manage_survey2">
 								<input type="checkbox" class="checkbox" id="manage_survey2"/>
 								<span class="label-title custom-checkbox-helper">Managing the survey</span>
 							</label>
 						</div>
 						<!--input-group-->
-						<div class="input-group">
+						<div class="input-group S2">
 							<label class="custom-checkbox-wrap" for="access_data2">
 								<input type="checkbox" class="checkbox" id="access_data2"/>
 								<span class="label-title custom-checkbox-helper">Accessing the data</span>
@@ -234,7 +301,7 @@
 		</div>
 		<!--main-content-->
 		<div class="setup-form-submit-button-wrap">
-			<button class="button button-submit" type="submit">next</button>
+			<button class="button button-submit setup-form-button-submit" type="submit">next</button>
 		</div>
 	</form>
 	<!--setup-form-->
