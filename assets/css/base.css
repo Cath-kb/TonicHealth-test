@@ -28,9 +28,11 @@ body {
 
 .main {
 	background: #fff;
-	padding: 8px;
+	padding: 0.667em;
 	border-radius: 10px;
 	box-shadow: 0 0 7px rgba(37,37,37,.5);
+	margin-top: 2.917em;
+	margin-bottom: 4.833em;
 }
 
 .cf:after {
@@ -62,13 +64,56 @@ body {
 
 }
 
+.pagination {
+	text-align: center;
+}
+
+.pagination-item {
+	display: inline-block;
+}
+
 .pagination-group-links {
 	list-style-type: none;
 	counter-reset: pagination-counter;
+	text-align: center;
+	padding: 0 .8em;
 }
 
-.pagination-link::before {
+.pagination-group-links > li {
+	display: inline-block;
+}
+
+.pagination-group-links .pagination-link::before {
 	counter-increment: pagination-counter;
 	content: counter(pagination-counter);
+}
+
+.pagination-link {
+	font-size: 1.172em;
+	font-weight: bold;
+	color: #b95b0f;
+	text-transform: capitalize;
+}
+
+.pagination-link.active {
+	color: #8c6239;
+	cursor: default;
+}
+
+.prev-link:before, .next-link:after {
+	font-size: 1.243em;
+	vertical-align: baseline;
+	font-family: monospace;
+	letter-spacing: -.2em;
+	padding: 0 .286em;
+
+}
+
+.prev-link:before {
+	content: '\3c\3c';
+}
+
+.next-link:after {
+	content: '\3e\3e';
 }
 /*Base CSS--------------------end*/

@@ -3,6 +3,14 @@
 @import "base.css";
 
 /*Main CSS------------------begin*/
+.main {
+	position: relative;
+}
+
+.main-content {
+	position: relative;
+}
+
 .form-section {
 	background-color: #f8f8f8;
 	box-shadow: 0 1px 2px rgba(0,0,0,.4);
@@ -23,7 +31,7 @@
 	text-align: center;
 	text-shadow: 0 1px 1px #ffe4b6;
 	font-weight: normal;
-	font-size: 18px;
+	font-size: 1.5em;
 }
 
 .form-section-content {
@@ -32,7 +40,43 @@
 }
 
 .form-group {
-	border-bottom: 1px solid #ccc;
+	position: relative;
+	padding: 0.5em;
+}
+
+.form-group:before {
+	content: '';
+	border-top: 1px solid #ccc;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
 	/*box-shadow: 0 1px 1px 1px #fff;*/
+}
+
+.form-group:first-child:before {
+	content: none;
+}
+
+.form-group legend.sub-title {
+	padding-top: .5em;
+}
+
+.form-section:last-of-type {
+	padding-bottom: 9.167em;
+}
+
+.form-steps.pagination {
+	position: absolute;
+	bottom: 1.2em;
+	width: 100%;
+}
+
+.setup-form-submit-button-wrap {
+	position: absolute;
+	top: 100%;
+	margin-top: 1.333em;
+	width: 100%;
+	text-align: center;
 }
 /*Main CSS--------------------end*/
