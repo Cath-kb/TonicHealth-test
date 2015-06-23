@@ -32,4 +32,43 @@ body {
 	border-radius: 10px;
 	box-shadow: 0 0 7px rgba(37,37,37,.5);
 }
+
+.cf:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.input {
+
+}
+
+.select {
+
+}
+
+.checkbox {
+
+}
+
+.radio {
+
+}
+
+.button {
+
+}
+
+.sub-title {
+
+}
+
+.pagination-group-links {
+	list-style-type: none;
+	counter-reset: pagination-counter;
+}
+
+.pagination-link::before {
+	counter-increment: pagination-counter;
+	content: counter(pagination-counter);
+}
 /*Base CSS--------------------end*/

@@ -22,4 +22,45 @@ body {
 		/*padding-left: 1em;*/
 	}
 }
+
+/*Screen Grid*/
+.row {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.S1, .S2, .S3, .S4, .S5, .S6 {
+	float: left;
+	box-sizing: border-box;
+}
+
+.S1 {
+	width: 16.666%;
+}
+
+.S2 {
+	width: 33.333%;
+}
+
+.S3 {
+	width: 50%;
+}
+
+.S4 {
+	width: 66.666%;
+}
+
+.S5 {
+	width: 83.333%;
+}
+
+.S6 {
+	width: 100%;
+}
 /*Grid CSS--------------------end*/

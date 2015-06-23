@@ -19,29 +19,155 @@
 				<section class="form-section">
 					<h2 class="form-section-title">Survey Settings</h2>
 					<div class="form-section-content">
-						<div class="form-group"></div>
+						<div class="form-group">
+							<div>
+								<label class="label" for="survey_name">Survey Name (example: &ldquo;Adult Patient Intake Form&rdquo;)</label>
+							</div>
+							<div>
+								<input class="input" id="survey_name" type="text" />
+							</div>
+						</div><!--form-group-->
+						<fieldset class="form-group upload-icon-group">
+							<legend class="sub-title">Survey Icon to Be Displayed on Survey List Page</legend>
+							<div class="form-icon-img">
+								<img class="img no-icon-img" src="#" alt="" title="" />
+							</div>
+							<div class="form-icon-buttons-group">
+								<button class="button button-upload" id="upload_button">Select new icon</button>
+								<button class="button button-upload">Upload</button>
+								<button class="button button-delete">Delete</button>
+							</div>
+						</fieldset><!--form-group-->
+						<fieldset class="form-group">
+							<legend class="sub-title">Languages</legend>
+							<div class="checkbox-group chose-lang-group">
+								<div>
+									<input class="checkbox" id="en" type="checkbox" />
+									<label for="en">English</label>
+								</div>
+							</div>
+						</fieldset><!--form-group-->
 					</div>
-				</section>
+				</section><!--form-section-->
 				<section class="form-section">
 					<h2 class="form-section-title">Universal Options for Survey Look and Feel</h2>
 					<div class="form-section-content">
-						<div class="form-group"></div>
+						<div class="form-group">
+							<p class="">Click on any of the below to make them universal for all the questions in your survey or form. But don't worry—you will still be able to change these settings for any individual question!</p>
+						</div><!--form-group-->
+						<fieldset class="form-group">
+							<legend class="sub-title">Question Font Formatting</legend>
+							<div class="buttons-group font-formatting-buttons-group">
+								<div class="font-style-buttons-group">
+									<button class="button button-bold">B</button>
+									<button class="button button-italic">I</button>
+									<button class="button button-underlined">U</button>
+								</div>
+								<div>
+									<select class="select font-size-select">
+										<option value="8">8</option>
+										<option value="10">10</option>
+										<option value="12">12</option>
+									</select>
+								</div>
+								<div>
+									<span class="font-formatting-result">Aa</span>
+								</div>
+							</div>
+						</fieldset><!--form-group-->
+						<fieldset class="form-group">
+							<div class="checkbox-group">
+								<div>
+									<input class="checkbox" id="allow_skip_questions" type="checkbox" />
+									<label for="allow_skip_questions">Don’t allow the user to skip any questions	</label>
+								</div>
+								<div>
+									<input class="checkbox" id="warning_message_show" type="checkbox" />
+									<label for="warning_message_show">Show a warning message if the user chooses to skip a particular question</label>
+								</div>
+							</div>
+						</fieldset><!--form-group-->
 					</div>
-				</section>
+				</section><!--form-section-->
 				<section class="form-section">
 					<h2 class="form-section-title"> Universal Options for Reports Look and Feel</h2>
 					<div class="form-section-content">
-						<div class="form-group"></div>
+						<div class="form-group">
+							<label class="label" for="patient_id">Display Patient Identifier Name As</label>
+							<input class="input" id="patient_id" type="text" />
+						</div><!--form-group-->
+
+						<div class="form-group">
+							<label class="label" for="layout_type">Layout to be used for printable reports</label>
+							<select class="select" id="layout_type">
+								<option value=""></option>
+								<option value=""></option>
+								<option value=""></option>
+							</select>
+						</div><!--form-group-->
+						<div class="form-group">
+							<label class="label" for="included_content">Content to include in printable reports</label>
+							<select class="select" id="included_content">
+								<option value=""></option>
+								<option value=""></option>
+								<option value=""></option>
+							</select>
+						</div><!--form-group-->
 					</div>
-				</section>
+				</section><!--form-section-->
 				<section class="form-section">
 					<h2 class="form-section-title">Permissions</h2>
 					<div class="form-section-content">
-						<div class="form-group"></div>
+						<fieldset class="form-group">
+							<legend class="sub-title">Users long Name maximum</legend>
+							<div class="input-group">
+								<div>
+									<input type="checkbox" class="checkbox" id="manage_survey" />
+									<label for="manage_survey">Managing the survey</label>
+								</div>
+								<div>
+									<input type="radio" class="radio" name="access_type" id="access_manage" />
+									<label for="access_manage">Manage</label>
+								</div>
+								<div>
+									<input type="radio" class="radio" name="access_type" id="access_view" />
+									<label for="access_view">View</label>
+								</div>
+							</div><!--input-group-->
+							<div class="input-group">
+								<div>
+									<input type="checkbox" class="checkbox" id="access_data" />
+									<label for="access_data">Accessing the data</label>
+								</div>
+								<div>
+									<input type="radio" class="radio" name="data_access_type" id="data_access_modify" />
+									<label for="data_access_modify">Modify Data</label>
+								</div>
+								<div>
+									<input type="radio" class="radio" name="data_access_type" id="data_access_view_all" />
+									<label for="data_access_view_all"> View All Data (including PHI)</label>
+								</div>
+								<div>
+									<input type="radio" class="radio" name="data_access_type" id="data_access_view_deindef" />
+									<label for="data_access_view_deindef">View de-identified data</label>
+								</div>
+							</div><!--input-group-->
+						</fieldset><!--form-group-->
+						<fieldset class="form-group">
+							<legend class="sub-title">Users long Name maximum 2</legend>
+							<div class="input-group">
+								<input type="checkbox" class="checkbox" id="manage_survey2" />
+								<label for="manage_survey2">Managing the survey</label>
+							</div><!--input-group-->
+							<div class="input-group">
+								<input type="checkbox" class="checkbox" id="access_data2" />
+								<label for="access_data2">Accessing the data</label>
+							</div><!--input-group-->
+						</fieldset><!--form-group-->
 					</div>
-				</section>
+				</section><!--form-section-->
 				<div class="form-steps pagination">
-					<a class="link prev-link" rel="prev"></a>
+					<a class="link prev-link" rel="prev">prev</a>
 					<ol class="pagination-group-links">
 						<li><a href="javascript:void(0);" class="link pagination-link" rel="start"></a></li>
 						<li><a href="javascript:void(0);" class="link pagination-link"></a></li>
@@ -49,8 +175,8 @@
 						<li><a href="javascript:void(0);" class="link pagination-link"></a></li>
 						<li><a href="javascript:void(0);" class="link pagination-link"></a></li>
 					</ol>
-					<a class="link next-link" rel="next"></a>
-				</div>
+					<a class="link next-link" rel="next">next</a>
+				</div><!--form-steps-->
 			</div><!--main-content-->
 			<button class="button button-submit" type="submit">next</button>
 		</form><!--setup-form-->
