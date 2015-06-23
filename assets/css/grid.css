@@ -37,6 +37,8 @@ body {
 
 .S1, .S2, .S3, .S4, .S5, .S6 {
 	float: left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
